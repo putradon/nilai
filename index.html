@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project akhir penilaian nilai mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Sistem Penilaian Mahasiswa</h1>
+    
+        <label>Nama Mahasiswa</label>
+        <input type="text" id="nama">
+    
+        <label>NIM</label>
+        <input type="text" id="nim">
+    
+        <label>Nilai Tugas</label>
+        <input type="number" id="tugas">
+    
+        <label>Nilai UTS</label>
+        <input type="number" id="uts">
+    
+        <label>Nilai UAS</label>
+        <input type="number" id="uas">
+    
+       
+        <div class="hasil" id="hasil">
+            <h2>Hasil Penilaian</h2>
+    
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td id="outNama"></td>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td id="outNim"></td>
+                </tr>
+                <tr>
+                    <td>Nilai Akhir</td>
+                    <td id="outNilai"></td>
+                </tr>
+                <tr>
+                    <td>Grade</td>
+                    <td id="outGrade"></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td id="outStatus"></td>
+                </tr>
+            </table>
+        </div>
+        
+            <br>
+        <h2>Daftar Mahasiswa</h2>
+<div class="table-responsive">
+<table border="1">
+    <button onclick="hitungNilai()">Hitung Nilai</button>
+    <thead>
+        <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Nilai Akhir</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="dataTabel"></tbody>
+    
+</table>
+</div>
+<br>
+<footer>
+    <p>© 2026 Indonesia | belajar pemrograman</p>
+    <p> <a href="https://wa.me/6281237674479?text=Helo ada yang ingin saya tanyakan">whatsap</a></p>
+    <p> <a href="https://ig.me/zsxhh_?text=Helo ada yang ingn saya tanyakan">instagram</a></p> 
+    
+    </footer>
+    </div>
+    
+        
+    <script src="script.js"></script>
+</body>
+</html>
